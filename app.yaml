@@ -23,8 +23,15 @@ inbound_services:
 
 handlers:
 - url: /favicon.ico
-  static_files: menu/static/img/favicon.ico
-  upload: menu/static/img/favicon.ico
+  static_files: menu/static/image/favicon.ico
+  upload: menu/static/image/favicon.ico
+
+- url: /*.svg
+  static_files: menu/static/image/*.svg
+  upload: menu/static/image/*.svg
+  mime_type: image/svg+xml
+  # http_headers:
+    # Content-Type: 'image/svg+xml'
 
 - url: /robots.txt
   static_files: menu/static/robots.txt
