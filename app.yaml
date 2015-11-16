@@ -22,9 +22,9 @@ inbound_services:
 - warmup
 
 handlers:
-- url: /favicon.ico
-  static_files: menu/static/image/favicon.ico
-  upload: menu/static/image/favicon.ico
+# - url: /favicon.ico
+#   static_files: menu/static/image/favicon.ico
+#   upload: menu/static/image/favicon.ico
 
 - url: /*.svg
   static_files: menu/static/image/*.svg
@@ -37,11 +37,11 @@ handlers:
   static_files: menu/static/robots.txt
   upload: menu/static/robots.txt
 
-- url: /gae_mini_profiler/static
-  static_dir: lib/gae_mini_profiler/static
+# - url: /gae_mini_profiler/static
+#   static_dir: lib/gae_mini_profiler/static
 
-- url: /gae_mini_profiler/.*
-  script: lib.gae_mini_profiler.main.menu
+# - url: /gae_mini_profiler/.*
+#   script: lib.gae_mini_profiler.main.menu
 
 - url: /static
   static_dir: menu/static
